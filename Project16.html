@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        .background{
+            height: 467px;
+            width: 1518px;
+            /* border: 1px solid; */
+            background-image: url(./image/81f3ff974d82520780078ba1cfbd453a1583259680.jpg);
+            background-size: cover;
+            display: flex;            
+        }
+        #navi{
+            height: 72px;
+            width: 1518px;
+            /* border-bottom: 1px solid rgb(104, 103, 103); */
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 45%, rgba(0, 0, 0, 0.05) 45%);
+            margin-top: 0%;
+            margin-bottom: 0%;
+            display: flex;
+            /* box-shadow: 1px 1px 10px black; */
+        }
+        #naviparent1{
+            height: 60px;
+            width: 400px;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6px;
+        }
+        .anchortag{
+            text-decoration: none;
+            color: white;
+        }
+
+        .naviparent2{
+            height: 60px;
+            width: 700px;
+            /* border: 1px solid; */
+            margin-left: 300px;
+            display: flex; 
+            justify-content: space-around;
+            margin-top: 6px;
+        }
+        #navichild1{
+            height: 60px;
+            width: 200px;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+        }
+        #navichild2{
+            height: 60px;
+            width: 100px;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+        }
+        #display1{
+            height: 190px;
+            width: 700px;
+            /* border: 1px solid white; */
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        #zomato1{
+            height: 68px ;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #zomato2{
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #zomatoc1{
+            height: 40px;
+            width: 150px; 
+            border: none;
+            outline: none;          
+        }
+        #zomatoc2{
+            height: 40px;
+            width: 450px;
+            border-left: 0.5px solid rgb(193, 192, 192);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        #zomatoc3{
+            height: 40px;
+            width: 100px;
+            border-left: 0.5px solid;
+        }
+        #c2_search{
+            height: 50px;
+            width: 600px;
+            /* border: 1px solid; */
+        }
+        #c2_search{
+            height: 38px;
+            border: none;
+            outline: none;
+        }  
+        #display2{
+            height: 450px;
+            width: 1518px;
+            /* border: 1px solid black; */
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+                
+        }  
+        #display2_child{
+            height: 350px;
+            width: 350px;
+            /* border: 1px solid; */
+            background-size: cover;
+            box-shadow: 1px 1px 10px;
+        }
+        #display2_c1{
+            height: 300px;
+        }
+        #display2_child:hover{
+            height: 360px;
+            width: 360px;
+        }
+        #display2_child1{
+            height: 90px;
+            width: 348px;
+            /* border: 1px solid; */
+            margin-top: 250px;
+            background-color: white;
+        }
+        #display2_child_text1{
+            width: 100%;
+            font-size: x-large;
+            font-family: 20px 'Times New Roman', Times, serif;
+            margin: 0 auto;
+            margin-top: 15px;
+            margin-left:20px;
+            font-weight: 500;
+        } 
+        #display2_child_text2{
+            margin-left: 20px;
+            display: inline;  
+        } 
+        #display3{
+            height: 480px;
+            width: 1200px;
+            /* border: 1px solid; */
+            margin-top: 2px;
+            margin: 0 auto;
+            
+        }
+        #display3_child1{
+            height: 100px;
+            width: 1100px;
+            /* border: 1px solid; */
+            margin-left: 50px;
+            margin-top: 10px;
+            align-items: center;
+            background-size: cover;
+        }
+        #display3_child1_c1{
+            height: 100px;
+            width: 795px;
+            border: 1px solid;
+        }
+        #display3_child1_c2{
+            height: 100px;
+            width: 300px;
+            /* border: 1px solid; */
+            margin-left: 800px;
+            display: flex;  
+        }
+        #display3_child2{
+            height: 350px;
+            width: 1100px;
+            /* border: 1px solid; */
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .display3_child2_c1{
+            height: 320px;
+            width: 222px;
+            /* border: 1px solid; */
+            border-radius: 20px;
+            margin-top: 20px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
+        }
+        .display3_child2_c1:hover{
+            height: 330px;
+            width: 232px;
+        }
+        #display3_child2_1{
+            height: 70px;
+            width: 219px;
+            /* border: 1px solid; */
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-top: 250px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 90%, rgba(0, 0, 0, 0.05) 85%);
+        }
+        #display3_child_text1{
+            width: 100%;
+            font-size: x-large;
+            font-family: 20px 'Times New Roman', Times, serif;
+            margin: 0 auto;
+            margin-top: 15px;
+            margin-left:10px;
+            font-weight: 500;
+            color: white;
+        } 
+        #display3_child_text2{
+            margin-left: 20px;
+            display: inline; 
+            color: white;
+        }
+        #display4{
+            height: 400px;
+            width: 1200px;
+            /* border: 1px solid; */
+            margin: 0 auto;
+        }
+        #display4_child1{
+            height: 50px;
+            width: 1000px;
+            /* border: 1px solid; */
+            margin-left: 50px;
+        }
+        #display4_child2{
+            height:300px;
+            width: 1199px;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap; 
+        }
+        #display4_child2_1{
+            height: 70px;
+            width: 300px;
+            /* border: 1px solid rgb(209, 207, 207); */
+            border-radius: 20px;
+            margin-top: 10px;
+            box-shadow: 5px 5px 12px rgb(169, 168, 168) ;
+        }
+        #display4_child2_1:hover{
+            height: 75px;
+            width: 305px;
+        }
+        #display4_child_text1{
+            width: 100%;
+            font-size: x-large;
+            font-family: 20px 'Times New Roman', Times, serif;
+            margin: 0 auto;
+            margin-top: 15px;
+            margin-left:20px;
+            font-weight: 500;
+            color: black;
+        } 
+        #display4_child_text2{
+            margin-left: 20px;
+            display: inline; 
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+       <nav>
+       <div id="navi">
+           <div id="naviparent1">
+               <a href="#" class="anchortag"><i class="fa fa-mobile" aria-hidden="true" style="font-size: large;"></i> Get the App</a>
+           </div>
+           <div class="naviparent2">
+               <div id="navichild1"><a href="#" class="anchortag"><b>Investor Relation</b></a></div>
+               <div id="navichild1"><a href="#" class="anchortag"><b>Add restaurant</b></a></div>
+               <div id="navichild2"><a href="#" class="anchortag"><b>Log in</b></a></div>
+               <div id="navichild2"><a href="#" class="anchortag"><b>Sign up</b></a></div>
+           </div>
+       </div>
+       <div id="display1">
+               <div id="zomato1"><img src="./image/zomato.png" alt="" style="height: 50px;"></div>
+               <div id="zomato1"><label for="" style="color:white;font-size:x-large;">Discover the best food & drinks in <b>Pune</b></label></div>
+               <div id="zomato2">
+                   <div>
+                       <select name="" id="zomatoc1">
+                           <option value="" id="">Pune</option>
+                           <option value="" id="">Pimpri-Chinchwad</option>
+                           <option value=""><i class="fa fa-globe" aria-hidden="true"></i> Detect my location</option>
+                       </select>
+                   </div>
+                   <div id="zomatoc2"> <i class="fa fa-search" aria-hidden="true" id="icon"></i><input type="text" id="c2_search" placeholder="Search for Restaurant or Club"></div>
+               </div> 
+        </div>
+        <div id="display2">
+            <div id="display2_child"style="background-image:url(./image/1.jpg); background-size: cover;">
+                    <div id="display2_child1">
+                        <p id="display2_child_text1">Order Online</p>
+                        <p id="display2_child_text2">Stay home and order to your doorstep</p>
+                    </div>
+            </div> 
+            <div id="display2_child" style="background-image:url(./image/2.jpg); background-size: cover;">    
+                    <div id="display2_child1">   
+                        <p id="display2_child_text1">Dinning</p>
+                        <p id="display2_child_text2">View the city's favorite dinning venues</p>
+                    </div>
+            </div>
+            <div id="display2_child" style="background-image:url(./image/3.jpg); background-size: cover;">
+                    <div id="display2_child1">
+                        <p id="display2_child_text1">Nightlife and Club</p>
+                        <p id="display2_child_text2">Explore the city's top nightlife outlets</p>
+                    </div>
+            </div>
+        </div>
+        <div id="display3">
+            <div id="display3_child1">
+                    <p id="#display2_child_text1" style="font-size:xx-large;margin: 0 auto;"><b>Collection</b></p>
+                    <p id="#display2_child_text2">Explore curated lists of top restaurant, cafes, pubs, and bars in Pune, based on trend. <a href="#" class="anchortag" style="color: rgb(246, 140, 140);margin-left: 350px;">All connections in Pune <i class="fa fa-hand-o-right" aria-hidden="true"></i></a></p><br>
+            </div>
+            <div id="display3_child2">
+                <div class="display3_child2_c1" style="background-image: url(./image/newly\ opend\ resto.webp);background-size: cover;">
+                    <div id="display3_child2_1">
+                        <p id="display3_child_text1">Newly Opened </p>
+                        <p id="display3_child_text2">23 Places <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="display3_child2_c1" style="background-image: url(./image/trending\ this\ week.jfif);background-size: cover;">
+                    <div id="display3_child2_1">
+                        <p id="display3_child_text1">Trending This Week</p>
+                        <p id="display3_child_text2">30 Places <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="display3_child2_c1" style="background-image: url(./image/best\ of\ resto.jpg);background-size: cover;">
+                    <div id="display3_child2_1">
+                        <p id="display3_child_text1">Best of Pune</p>
+                        <p id="display3_child_text2">76 Places<i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="display3_child2_c1" style="background-image: url(./image/romantic\ restorent.avif);background-size: cover;">
+                    <div id="display3_child2_1">
+                        <p id="display3_child_text1">Romantic Restaurant</p>
+                        <p id="display3_child_text2">27 Places<i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="display4">
+            <div id="display4_child1">
+                <p id="#display2_child_text1" style="font-size:xx-large;"><b>Popular localities in Pune</b></p>
+                <p></p>
+            </div>
+            <div id="display4_child2">
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1">Baner</p>
+                    <p id="display4_child_text2">1043 Places <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1">Viman-Nagar</p>
+                    <p id="display4_child_text2">1076 Places <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1">Hinjawadi</p>
+                    <p id="display4_child_text2">1355 Places<i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1">Koregaon Park</p>
+                    <p id="display4_child_text2">302 Places <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1">Wakad</p>
+                    <p id="display4_child_text2">1367 Places <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1">Kothrud</p>
+                    <p id="display4_child_text2">30 Places <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1">Kalyani Nagar</p>
+                    <p id="display4_child_text2">250 Places<i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1">Kharadi</p>
+                    <p id="display4_child_text2">1156 Places<i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+                <Div id="display4_child2_1">
+                    <p id="display4_child_text1" style="justify-content: center;align-items:center;">See more <i class="fa fa-sort-desc" aria-hidden="true"></i></p>
+                </Div>
+            </div>
+        </div>
+        </nav>
+    </div>
+</body>
+</html>

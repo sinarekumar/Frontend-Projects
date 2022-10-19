@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        .background{
+            height: 695px;
+            /* border: 1px solid; */
+            display: block;
+        }
+        
+        .parent1{
+            height: 70px;
+            /* border: 1px solid; */
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid;
+            box-shadow: 0px 2px 1px;
+            
+        }
+        .parent2{
+            height: 622px;
+            /* border: 1px solid; */
+            align-items:center ;
+        }
+        #navi1{
+            height: 50px;
+            width: 700px;
+            
+            /* margin-top: 10px; */
+            margin-left: 628px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            position: relative;
+
+        }
+        #child{
+            height: 50px;
+           width: 200px;
+           background: url(./image/nb_logo_new_trans.png) no-repeat ;
+           margin-left: 10px;
+           /* border: 1px solid    ; */
+        }
+        .box{
+            height: 30px;
+            width: 140px;
+            /* border: 1px solid; */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;      
+        }
+        .box:hover{
+            height: 35px;
+            box-shadow: 1px 1px 11px black;
+            background-color: rgb(237, 235, 235);
+        }
+        #boxa{
+            text-decoration: none;
+        }
+        .box1{
+            height: 30px;
+            width: 70px;
+            /* border: 1px solid; */
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            /* border: none; */
+            border-radius: 20px;
+        }
+        .box1:hover{
+            height: 35px;
+            box-shadow: 1px 1px 11px black;
+            background-color: rgb(237, 235, 235);
+        }
+        #labal1{
+            height: 30px;
+            font-size: x-large;
+            /* border: 1px solid; */
+            margin-left: 30px;
+            
+        }
+        .head1{
+            height: 78px;
+            width: 500px;
+            /* border: 1px solid; */
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 520px;
+        }
+        #labal2{
+            height: 25px;
+            width: 200px;
+            /* border: 1px solid; */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 140px;
+            display: flex;
+            background-color: rgb(252, 212, 161);
+        }
+        #head2{
+            height: 250px;
+            width: 1200px;
+            /* border: 1px solid; */
+            margin-left: 170px;
+            margin-top: 10px;
+        }
+        #head3{
+            height: 40px;
+            /* border: 1px solid; */
+            justify-content: center;
+            align-items: center;
+        }
+        #head4{
+            height: 208px;
+            /* border: 1px solid; */
+        }
+        #optionbox{
+            height: 30px;
+            width: 500px;
+            /* border: 1px solid; */
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 9px;
+            margin-left: 350px;
+            
+        }
+        #box3{
+            height: 25px;
+            width: 100px;
+            /* border: 1px solid; */
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+            text-align: center;
+        }
+        #box3:hover{
+            height: 35px;
+            box-shadow: 1px 1px 11px black;
+            background-color: rgb(237, 235, 235)
+        }
+        #searchbox{
+            height: 40px;
+            /* border: 1px solid; */
+            margin-top: 5px;
+            display: flex;
+        }
+        #align1{
+            height: 40px;
+            /* border-bottom: 1px solid; */
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 1px 2px;
+        }
+        #optionbox1{
+            height: 40px;
+            width: 120px;
+            border: none;
+
+        }
+        #search{
+            height: 40px;
+            width: 900px;
+        }
+        #searchinput{
+            height: 40px;
+            width: 150px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(232, 63, 63);
+        }
+        #searchinput:hover{
+            height: 43px;
+            background-color:rgb(232, 63, 63) ;
+            box-shadow: 0px 0px 10px;
+        }
+        #head5{
+            height: 50px;
+            border: none;
+            /* justify-content: center; */
+            display: flex;
+            box-shadow: 1px 1px 2px;
+            border-bottom: 1px solid;
+        }
+        #option1{
+            margin-left: 30px;
+            width: 200px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="parent1">
+            <div id="child">
+
+            </div>
+            <div id="navi1">
+                <div class="box"><a href="./" id="boxa"><i class="fa fa-newspaper-o" aria-hidden="true"></i> My Booking</a></div>
+                <div class="box"><a href="./" id="boxa"><i class="fa fa-credit-card" aria-hidden="true"></i> Pay Rent</a></div>
+                <div class="box"><a href="./" id="boxa">For Property Owner</a></div>
+                <div class="box1"><a href="./" id="boxa">Sign Up</a></div>
+                <div class="box1"><a href="./" id="boxa">Log In</a></div>
+                <div class="box1"><a href="./" id="boxa"><i class="fa fa-bars" aria-hidden="true"> Menu</i></a></div>
+                
+            </div>
+        </div>
+        <div class="parent2">
+            <div class="head1">
+                <label for="" id="labal1">World's Largest NoBrokerage Property Site </label>
+                <br>
+                <div>
+                    <p id="labal2"><i class="fa fa-btc" aria-hidden="true">_ Pay rent with Credit Card</i></p>
+                </div>
+            </div>
+            <div id="head2">
+                <div id="head3">
+                    <div id="optionbox">
+                        <div id="box3">Buy</div>
+                        <div id="box3">Rent</div>
+                        <div id="box3">Commercial</div>
+                    </div>
+                </div>
+                <div id="head4">
+                    <div id="searchbox">
+                        <div id="align1" style="width: 140px;"><select name="" id="optionbox1">
+                            <option value="Pune">Pune</option>
+                            <option value="Ahmednagar">Ahmednagar</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select></div>
+                        <div id="align1" style="width: 900px;"><input type="search" id="search" placeholder="Search Flats / House / Property"></div>
+                        <div id="align1" style="width: 150px;"><input type="submit" id="searchinput"></div>
+                    </div>
+                    <div id="head5">
+                        <input type="radio" style="margin-left: 20px;"><p>Full House</p>&nbsp
+                        <input type="radio"><p>PG/Hostel</p>&nbsp
+                        <input type="radio"><p>Flatmates</p>
+                        &nbsp
+                        <select name="" id="option1">
+                            <option value=""><b> Apartment Type </b></option>
+                            <option value="">1 BHK</option>
+                            <option value="">2 BHK</option>
+                            <option value="">3 BHK</option>
+                        </select>
+                        <select id="option1">
+                            <option value="">Availability</option>
+                            <option value="">Immidiate</option>
+                            <option value=""> Aftersome time</option>
+                        </select>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; position: relative; left: 620px; top: 50px; ;">
+                <div style="height: 30px; width: 50px; margin-right: 12px; "><hr></div>
+                <a href="#" style="text-decoration: none; color: black;">Are you a Property Owner?</a>
+                <div style="height: 30px; width: 50px; margin-left: 12px;"><hr></div>
+            </div>
+            <div style="height: 40px;width: 180px;background-color: rgb(44, 165, 131); display: flex; justify-content: center; align-items: center; position: relative;left: 683px; top: 50px;">
+                <a href="#" style="text-decoration: none; color: white;">Post Free Property ad</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        .background {
+            background-color: aliceblue;
+            height: 696px;
+            display: flex;
+        }
+
+        .parent {
+            height: 590px;
+            width: 400px;
+            border: 1px solid;
+            border-radius: 5%;
+            margin: 0 auto;
+            margin-top: 70px;
+            background-color: rgb(35, 193, 35);
+            display: flex;
+        }
+
+        .child {
+            height: 450px;
+            width: 300px;
+            border: 1px solid;
+            border-radius: 5%;
+            margin-top: 70px;
+            margin-left: 50px;
+            background-color: white;
+            /* align-items: center; */
+            /* justify-content: center; */
+            text-align: center;
+            display: inline;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="parent" style="box-shadow: 3px 3px 4px black">
+
+            <div class="child" style="box-shadow: 5px 7px 10px black">
+                <br>
+                <h1>Sign Up</h1>
+                <p style="font-size: small;">Please fill in this form to create an account! </p>
+                <hr style="width:250px ;">
+                <br>
+                <i class="fa fa-user" aria-hidden="true" style="margin-right: 10px;"></i> <input type="text"
+                    placeholder="USERNAME" style="box-shadow: 3px 3px 4px black">
+                <br>
+                <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 7px;"></i> <input type="text"
+                    placeholder="E-M@IL" style="margin-top: 5px;box-shadow: 3px 3px 4px black">
+                <br>
+                <i class="fa fa-unlock-alt" aria-hidden="true" style="margin-right:13px ;"></i> <input type="password"
+                    placeholder="PASSWORD" style="margin-top: 5px;box-shadow: 3px 3px 4px black">
+                <br>
+                <i class="fa fa-check" aria-hidden="true" style="margin-right: 8px;"></i> <input type="password"
+                    placeholder="CONFIRM PASSWORD" style="margin-top: 5px;box-shadow: 3px 3px 4px black">
+                <br>
+                <input type="checkbox" style="margin-top: 10px;">
+                <p style="display: inline; font-size: x-small;margin-right: 1px;">I accept the <a href=""
+                        style="color: red;">Term of Use</a> & <a href="" style="color: red;">Privacy policy</a></p>
+                <br>
+                <br><br>
+                <input type="submit" value="Sign Up"
+                    style="border: none; height: 40px; width: 100px;border-radius: 20%;color: white; background-color:rgb(35, 193, 35);font-size: larger;box-shadow: 3px 3px 4px black">
+                <br>
+                <p style="font-size: small;">Already have an account? <a href="" style="text-decoration:none;;">Login
+                        here</a></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

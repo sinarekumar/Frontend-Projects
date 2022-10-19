@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background {
+            height: 696px;
+            background-color: azure;
+            display: flex;
+        }
+
+        .parent {
+            height: 560px;
+            width: 400px;
+            /* border: 1px solid; */
+            margin: 0 auto;
+            margin-top: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="parent">
+            <fieldset id="child1"
+                style="height: 540px; background-color: aqua ;border: none;border-radius: 20px;box-shadow: 8px 10px rgb(148, 148, 148);">
+                <legend style="color: coral;font-size:x-large;">
+                    <h1>Register</h1>
+                </legend>
+                Name: <br>
+                <input type="text" placeholder="First Name"
+                    style="height: 20px; width: 170px;border: none;box-shadow: 2px 2px black;">
+                <input type="text" placeholder="Last Name"
+                    style="height: 20px;margin-left: 5px; border: none;box-shadow: 2px 2px black;">
+                <br><br>
+                Username:
+                <input type="text" required style="width: 350px;height: 20px; border: none;box-shadow: 2px 2px black;">
+                <br><br>
+                E-mail:
+                <input type="email" required style="width: 350px;height: 20px; border: none;box-shadow: 2px 2px black;">
+                <br><br>
+                Password:
+                <input type="password" required
+                    style="width: 350px;height: 20px; border: none;box-shadow: 2px 2px black;">
+                <br><br>
+                Short Bio:
+                <input type="text" required style="height: 60px;width: 350px; border: none;box-shadow: 2px 2px black;">
+                <br>
+                <p>Shear a little information about yourself</p>
+                <input type="submit" required value="Submit" checked
+                    style="width: 100px; background-color: coral;box-shadow: 2px 2px black;">
+
+        </div>
+    </div>
+</body>
+
+</html>

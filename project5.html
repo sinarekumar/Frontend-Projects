@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background{
+            height: 640px;
+            background-image: url(./image/background-g2fe4c0dae_1920.jpg);
+            border: 1px solid;
+            justify-content: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+        }
+        #parent{
+            height: 500px;
+            width: 750px;
+            border: 1px solid;
+            display: flex;
+            box-shadow: 10px 10px 15px rgb(18, 4, 4);
+
+        }
+        #child1{
+            height: 500px;
+            width: 249px;
+            border: 1px solid;
+            background-image: url(./image/geometric-g36f397626_1920.jpg);
+            align-items: center;
+
+        }
+        .login{
+            text-align: center;
+        }
+        #child2{
+            height: 500px;
+            width: 520px;
+            border: 1px solid;
+            background-image: radial-gradient(white, rgb(210, 210, 228));
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #text{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="parent">
+            <div id="child1">
+                <h2 id="text" class="login">LOGIN</h2>
+                <br>
+                <h4 id="text">Get access to your Orders, wishing and Recomadations </h4>
+                <h5 id="text"> For more details : <a href="https://www.flipkart.com" target="_self">Click Here</a></h3>
+                    <div id="img"></div>
+            </div>
+            <div id="child2">
+                
+                <h1>Login Information</h1>
+                <br>
+                <input type="text" name="" id="" style="height: 30px; width: 400px;border: none; border-bottom: 1px solid ;" placeholder="Enter email-id/ Mobile number" ><br>
+                <br>
+                <br>
+                <input type="text" name="" id="" style="height: 30px; width: 400px;border: none; border-bottom: 1px solid ;" placeholder="Enter Password" ><br>
+                <br>
+                <br>
+                <input type="submit">
+                <br>
+                <br>
+                <b>OR</b>
+                <br>
+                <br>
+                <button>Request OTP</button>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <button><a href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account" target="_self">New to Flipkart ? Create an account</a></button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

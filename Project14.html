@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            height: 695px;
+            background-image: url(./image/background-g2fe4c0dae_1920.jpg);
+            /* display: flex; */
+            justify-content: center;
+            border: 1px solid;
+            color: white;
+             
+        }
+        .parent{
+            height: 600px;
+            width: 1000px;
+            border: 1px solid;
+            margin: 20px auto;
+            background-color: rgb(24, 23, 23, 0.4);
+        }
+        #h1{
+            margin-left: 600px;
+        }
+        #text{
+            color: white;
+            margin-left: 20px;
+            display: inline;
+            }
+        #input{
+            height:30px ;
+            width: 300px;
+            background: transparent;
+            color: aliceblue;
+        }
+        #radio{
+            
+        }
+        #child{
+            height: 200px;
+            width: 999px;
+            border: 1px solid;
+            display: inline;
+        }
+        #child1{
+            height: 200px;
+            width: 100px;
+            border: 1px solid;
+            margin-top: -17px;
+            margin-left: 180px;
+            background: transparent; 
+        }
+        #supp{
+            margin-top: 10px;
+                     
+            
+        }
+</style>
+</head>
+<body>
+    <div class="background">
+        <h1 id="h1">FEEDBACK FORM</h1>
+        <div class="parent">
+           <br>
+           <label for="text" id="text">Customer Name :</label>
+           <input type="input" id="input" style="margin-left: 8px;">
+           <label for="text">Products You Like :</label>
+           <select name="" id="input"><option value="" selected>Product</option></select>
+           <br>
+           <br>
+           <label for="text" id="text">Email Address :</label>
+           <input type="email" id="input" style="margin-left: 20px;">
+           <br><br>
+           <label for="text" id="text">Organization :</label>
+           <input type="text" id="input" style="margin-left: 30px;">
+           <br><br>
+           <div id="child">  
+                <label for="text" id="" >Rating for Company : </label>
+                <div id="child1">
+                 <input type="radio" name="" id=""><label for="text" style="display: inline;">Very High</label>
+                 <label for="text" id="supp" >Rating for Support : </label>
+                 <br><br>
+                 <input type="radio" name="" id=""><label for="text">High</label>
+                 <br><br>
+                 <input type="radio" name="" id=""><label for="text">Medium</label>
+                 <br><br>
+                 <input type="radio" name="" id=""><label for="text">Low</label>
+                 <br><br>
+                 <input type="radio" name="" id=""><label for="text">Very Low</label>
+                 <br><br>
+                </div>    
+                
+                <div id="child1">
+                 <input type="radio" name="" id=""><label for="text">Very High</label>
+                 <br><br>
+                 <input type="radio" name="" id=""><label for="text">High</label>
+                 <br><br>
+                 <input type="radio" name="" id=""><label for="text">Medium</label>
+                 <br><br>
+                 <input type="radio" name="" id=""><label for="text">Low</label>
+                 <br><br>
+                 <input type="radio" name="" id=""><label for="text">Very Low</label>
+                 <br>
+                </div>
+            </div>
+           
+
+           
+                               
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>

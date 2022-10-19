@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            background-image: url(./image/computer-g415635e31_1920.jpg);
+            background-size: cover;
+            opacity: 0.8;
+            height: 696px;
+            display: flex;
+            
+
+        }
+        .parent{
+            height: 400px;
+            width: 649px;
+            border: 1px solid;
+            margin: 110px auto;
+            display: flex;
+            box-shadow: -5px -5px 10px ;
+            border: none;
+        }
+        .child1{
+            height: 400px;
+            width: 300px;
+            border: 1px solid;
+            border: none;
+            box-shadow: 5px 5px 9px black;
+            background-image: url(./image/background-g2fe4c0dae_1920.jpg);
+            color: white;
+        }
+        .child2{
+            height: 400px;
+            width: 350px;
+            border-left: 1px solid;
+            /* background-image: url(./image/background-g2fe4c0dae_1920.jpg); */
+            background-size: 100%;
+            background-position: 100%;
+            box-shadow: 5px 5px 10px;  
+              
+        }
+        #submit{
+            padding:10px 100px 10px 100px;
+            border: 1px solid;
+            margin-left:25px;
+            background:transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="parent">
+            <div class="child1">
+                <br>
+                <h1 style="display: inline; margin-left: 10px;">Sign in /Sign up</h1>
+                <hr style="width:100px ;color: black ;box-shadow: 3px 3px 3px; margin-right: 200px;margin-left: 10px;">
+                <br>
+                <p style="margin-left: 10px;display:inline"><b>User Name</b></p><br>
+                <input type="text" style="border:none; border-bottom: 1px solid;margin-left: 12px; height: 25px;width: 250px;background: transparent;outline: none;">
+                <br><br>
+                <p style="margin-left: 10px;display:inline"><b>Password</b></p><br>
+                <input type="Password" style="border:none; border-bottom: 1px solid;margin-left: 12px; height: 25px;width: 250px;background: transparent;outline: none;">
+                <br>
+                <p style="font-size:small;"><input type="checkbox" name="" id="" style="display: inline;margin-left: 10px;">Remaimber me?</p>
+                <br>
+                <button id="submit" type="submit" style="font-size: large;color: rgb(250, 246, 246);">Submit</button>
+                <br>
+                <p style="font-size:small;"><a href="" style="color: black;text-decoration:none; margin-left:100px;">Forget Password ?</a></p>
+            </div>
+            <div class="child2"></div>
+        </div>
+    </div>
+</body>
+</html>
